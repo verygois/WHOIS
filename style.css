@@ -1,0 +1,80 @@
+#header,
+#header menu,
+#header #button {
+    bottom: 0;
+}
+
+#header menu {
+    align-items: end;
+}
+
+#data {
+    top: 0;
+}
+
+#data #author.name::before {
+    content: 'Website';
+}
+
+#data #author.email::before {
+    content: 'Email';
+}
+
+#data time::before {
+    content: 'Date of Birth';
+}
+
+#lifeOf li p i::after {
+    content: 'Years';
+    display: inline-block;
+    font-style: normal;
+    font-size: 75%;
+    margin-left: 0.75rem;
+}
+
+#data #author.name {
+    transform-origin: left top;
+}
+
+#lifeOf li p time,
+#lifeOf li p a {
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+
+#lifeOf li p time {
+    font-size: 95%;
+}
+
+#lifeOf li p a,
+#lifeOf li p i {
+    font-size: 111%;
+}
+
+#lifeOf li p a {
+    color: #000;
+    border-bottom: solid 0.1rem;
+    text-decoration: none;
+}
+
+#data #author,
+#lifeOf li p i,
+#lifeOf li p time {
+    font-family: "Great Vibes", cursive;
+}
+
+#data time,
+#lifeOf li p {
+    font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+#age,
+#data #author::before,
+#data time::before,
+#lifeOf li p i::after {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#lifeOf li p small {
+    filter: blur(0.25rem);
+}

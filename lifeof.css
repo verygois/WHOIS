@@ -1,0 +1,59 @@
+#lifeOf {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+#lifeOf li {
+    padding: 0.25rem 0.5rem;
+    margin: 0;
+}
+
+#lifeOf li p {
+    font-size: 90%;
+    padding: 0;
+    margin: 0.25rem;
+}
+
+#lifeOf li p::after {
+    content: '';
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+#lifeOf {
+    column-count: auto;
+    column-rule: 0.1rem dotted #000;
+    column-width: 300px;
+    column-fill: balance;
+}
+
+#lifeOf li {
+    break-inside: avoid;
+    list-style: inside none;
+}
+
+#lifeOf li i,
+#lifeOf li u {
+    display: block;
+}
+
+#lifeOf li i {
+    float: left;
+}
+
+#lifeOf li u {
+    float: right;
+    border: 0.1rem solid;
+    border-radius: 1rem;
+    font-size: 90%;
+    padding: 0.125rem 0.25rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    #lifeOf {
+        font-size: 3.5vw;
+    }
+}
