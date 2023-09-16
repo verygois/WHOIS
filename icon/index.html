@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
+  <title>Icon | Very Gois</title>
+  <meta content="Icon | Very Gois" property="og:title">
+  <meta content="Create Icons by Great Vibes." name="description">
+  <meta content="Create Icons by Great Vibes." name="og:description">
+
+  <!--Icons-->
+  <link rel="icon" href="../icon/favicon.png" type="image/png">
+  <link rel="icon" href="../icon/android.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="../icon/ios.png" sizes="180x180" type="image/png">
+
+  <link rel="stylesheet" href="../css/logo.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+  <style type="text/css">
+    p,
+    pre,
+    #change,
+    #create {
+      font-family: "Arial Narrow", Arial, sans-serif;
+    }
+
+    p,
+    #change {
+      transform: scale(1, 1.25);
+    }
+
+    section p {
+      top: 0;
+      left: 0;
+    }
+
+    @media print {
+
+      #create,
+      #howto {
+        display: none;
+      }
+    }
+  </style>
+  <script src="../js/fillText.js"></script>
+  <script>
+    window.onload = (event) => {
+      canvasIcons('1.9')
+    };
+  </script>
+</head>
+
+<body>
+  <section id="create" class="hidden">
+    <div>
+      <input type="text" id="textHere" value="VG">
+      <button onclick="canvasIcons('1.9')">canvasIcons()</button>
+    </div>
+  </section>
+
+  <main id="logo">
+    <section>
+      <p>
+        <small>ファビコン</small><br />
+        32 × 32 px
+      </p>
+      <canvas id="icon" width="32" height="32"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Windows用アイコン(小)</small><br />
+        70 × 70 px
+      </p>
+      <canvas id="icon" width="70" height="70"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Windows用アイコン(中)</small><br />
+        150 × 150 px
+      </p>
+      <canvas id="icon" width="150" height="150"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>iOS端末用Webクリップアイコン</small><br />
+        180 × 180 px
+      </p>
+      <canvas id="apple" width="180" height="180"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Android端末用Webクリップアイコン</small><br />
+        192 × 192 px
+      </p>
+      <canvas id="android" width="192" height="192"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Windows用アイコン(大)・Instagram用アイコン</small><br />
+        320 × 320 px
+      </p>
+      <canvas id="instagram" width="320" height="320"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>Twitter用アイコン</small><br />
+        400 × 400 px
+      </p>
+      <canvas id="twitter" width="400" height="400"></canvas>
+    </section>
+    <section>
+      <p>
+        <small>サマリーカード・YouTube用アイコン</small><br />
+        800 × 800 px
+      </p>
+      <canvas id="youtube" width="800" height="800"></canvas>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -2,16 +2,16 @@
     font-size: 16px;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 5.5rem);
     max-height: 100vw;
 }
 
-#age,
-#data {
+#whois #age,
+#whois #data {
     position: absolute;
 }
 
-#age {
+#whois #age {
     font-size: 250%;
     padding: 0;
     margin: 0;
@@ -21,7 +21,7 @@
     transform: translate(-50%, -50%);
 }
 
-#data {
+#whois #data {
     font-size: 111%;
     font-weight: 500;
     display: flex;
@@ -32,8 +32,8 @@
     right: 0;
 }
 
-#data #author::before,
-#data time::before {
+#whois #data #author::before,
+#whois #data time::before {
     display: block;
     font-size: 75%;
 }
