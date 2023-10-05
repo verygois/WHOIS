@@ -47,21 +47,24 @@ function whois(obj) {
   }
 
   birth.addEventListener('click', function () {
+    let thisDay
     if (week == 0) {
-      birth.textContent = "日曜日 Sunday"
+      thisDay = "日曜日 Sunday"
     } else if (week == 1) {
-      birth.textContent = "月曜日 Monday"
+      thisDay = "月曜日 Monday"
     } else if (week == 2) {
-      birth.textContent = "火曜日 Tuesday"
+      thisDay = "火曜日 Tuesday"
     } else if (week == 3) {
-      birth.textContent = "水曜日 Wednesday"
+      thisDay = "水曜日 Wednesday"
     } else if (week == 4) {
-      birth.textContent = "木曜日 Thursday"
+      thisDay = "木曜日 Thursday"
     } else if (week == 5) {
-      birth.textContent = "金曜日 Friday"
+      thisDay = "金曜日 Friday"
     } else if (week == 6) {
-      birth.textContent = "土曜日 Saturday"
+      thisDay = "土曜日 Saturday"
     }
+
+    birth.textContent = birth.textContent === date_of_birth ? thisDay : date_of_birth;
   })
 
   function counter() {
