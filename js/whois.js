@@ -23,13 +23,46 @@ function whois(obj) {
 
   const date_of_birth = obj.date_of_birth;
   const datetime = obj.datetime;
-  
-  let thisYear = new Date().getFullYear();
-  let thisAge = ((new Date() - new Date(datetime)) / 31557600000).toFixed(0);
+
+  let jst = new Date().toLocaleString({ timeZone: 'Asia/Tokyo' });
+  let thisYear = new Date(jst).getFullYear();
+  let thisMonth = new Date(jst).getMonth();
+  let thisDate = new Date(jst).getDate();
+  let thisAge = ((new Date(jst) - new Date(datetime)) / 31557600000).toFixed(0);
 
   const birth = document.querySelector("#data time");
   const age = document.querySelector("#age");
   birth.textContent = date_of_birth;
+
+  const birthday = new Date(date_of_birth);
+  const week = birthday.getDay();
+  const month = birthday.getMonth();
+  const date = birthday.getDate();
+
+  if (thisMonth === month & thisDate == date) {
+    const whois = document.querySelector("#whois");
+    const h3 = document.createElement("h3");
+    h3.innerHTML = "It's My Birthday";
+    whois.appendChild(h3);
+  }
+
+  birth.addEventListener('click', function () {
+    if (week == 0) {
+      birth.textContent = "日曜日 Sunday"
+    } else if (week == 1) {
+      birth.textContent = "月曜日 Monday"
+    } else if (week == 2) {
+      birth.textContent = "火曜日 Tuesday"
+    } else if (week == 3) {
+      birth.textContent = "水曜日 Wednesday"
+    } else if (week == 4) {
+      birth.textContent = "木曜日 Thursday"
+    } else if (week == 5) {
+      birth.textContent = "金曜日 Friday"
+    } else if (week == 6) {
+      birth.textContent = "土曜日 Saturday"
+    }
+  })
 
   function counter() {
     age.textContent = ((new Date() - new Date(datetime)) / 31557600000).toFixed(9);
