@@ -1,52 +1,55 @@
-{ 
-    "contents" : [
-      {
-        "year" : "2023",
-        "html" : "<time>06 Oct</time> Launch <a href='the-best-items.com'>https://the-best-items.com/</a>"
-      },
-      {
-        "year" : "2023",
-        "html" : "<time>03 Aug</time> .SPACE Domain + ICANN fee (billed every year) <small>¥2,276</small>"
-      },
-      {
-        "year" : "2022",
-        "html" : "<time>06 Oct</time> Registrar Registration (years) - includes iCANN Fee <small>¥2,763</small>"
-      },
-      {
-        "year" : "2022",
-        "html" : "<time>24 Aug</time> Renew order (Domain Registration + Domain Privacy Protection) creative-community.space <small>¥2,273</small> + <small>¥739</small>"
-      },
-      {
-        "year" : "2022",
-        "html" : "<time>23 Jul</time> <a href='https://the-things-i-we-own.github.io/'>The Things I (We) Own</a>"
-      },
-      {
-        "year" : "2021",
-        "html" : "<time>16 Sep</time> Domain Registration + Domain Privacy Protection <a href='https://creative-community.space/'>creative-community.space</a> <small>¥1,475 + 908</small>"
-      },
-      {
-        "year" : "2019",
-        "html" : "<time>01 Oct</time> Domain Registration (3 Years) - <a href='https://vg.pe.hu/2019-2021/'>otobuilding.com (archive)</a> <small>¥3,320</small>"
-      },
-      {
-        "year" : "2019",
-        "html" : "<time>05 Sep</time> Upgrade to Hosting Premium <small>¥15,312</small>"
-      },
-      {
-        "year" : "2019",
-        "html" : "<time>06 Jan - 31 Aug</time> <a href='https://vg.pe.hu/2f/'>2F</a>"
-      },
-      {
-        "year" : "2017",
-        "html" : "<time>16 Dec - 30 Apr, 2018</time> <a href='https://vg.pe.hu/1f/'>1F</a>"
-      },
-      {
-        "year" : "2017",
-        "html" : "<time>15 Nov</time> Upgrade to Single Web Hosting <small>¥5,712</small>"
-      },
-      {
-        "year" : "2014",
-        "html" : "<time>13 Dec</time> Domain Registration <a href='https://vg.pe.hu/'>vg.pe.hu</a>"
-      }
-    ]
-  }
+{
+  "date_of_birth": "13 DEC 2014",
+  "datetime": "2014-12-13T09:03:00",
+
+  "contents": [
+    {
+      "year": "2023",
+      "html": "<time>06 Oct</time> Launch <a href='https://the-best-items.com/'>the-best-items.com</a>"
+    },
+    {
+      "year": "2023",
+      "html": "<time>03 Aug</time> .SPACE Domain + ICANN fee (billed every year) <small>¥2,276</small>"
+    },
+    {
+      "year": "2022",
+      "html": "<time>06 Oct</time> Registrar Registration (years) - includes iCANN Fee <small>¥2,763</small>"
+    },
+    {
+      "year": "2022",
+      "html": "<time>24 Aug</time> Renew order (Domain Registration + Domain Privacy Protection) creative-community.space <small>¥2,273</small> + <small>¥739</small>"
+    },
+    {
+      "year": "2022",
+      "html": "<time>23 Jul</time> <a href='https://the-things-i-we-own.github.io/'>The Things I (We) Own</a>"
+    },
+    {
+      "year": "2021",
+      "html": "<time>16 Sep</time> Domain Registration + Domain Privacy Protection <a href='https://creative-community.space/'>creative-community.space</a> <small>¥1,475 + 908</small>"
+    },
+    {
+      "year": "2019",
+      "html": "<time>01 Oct</time> Domain Registration (3 Years) - <a href='https://vg.pe.hu/2019-2021/'>otobuilding.com (archive)</a> <small>¥3,320</small>"
+    },
+    {
+      "year": "2019",
+      "html": "<time>05 Sep</time> Upgrade to Hosting Premium <small>¥15,312</small>"
+    },
+    {
+      "year": "2019",
+      "html": "<time>06 Jan - 31 Aug</time> <a href='https://vg.pe.hu/2f/'>2F</a>"
+    },
+    {
+      "year": "2017",
+      "html": "<time>16 Dec - 30 Apr, 2018</time> <a href='https://vg.pe.hu/1f/'>1F</a>"
+    },
+    {
+      "year": "2017",
+      "html": "<time>15 Nov</time> Upgrade to Single Web Hosting <small>¥5,712</small>"
+    },
+    {
+      "year": "2014",
+      "html": "<time>13 Dec</time> Domain Registration <a href='https://vg.pe.hu/'>vg.pe.hu</a>"
+    }
+  ]
+}

@@ -5,6 +5,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <script src="js/whois.js"></script>
+  <script>
+    // URLのアンカー（#以降の部分）を取得
+    const urlHash = location.hash;
+
+    // URLにアンカーがない場合
+    if (!urlHash) {
+      whoisJson('index.json')
+    } else {
+      // URLにアンカーがある場合
+      let yourname = urlHash.replace('#', '')
+      whoisJson(`${yourname}.json`)
+    }
+  </script>
 
   <!--og:meta-->
   <meta content="website" property="og:type">
@@ -31,7 +45,8 @@
   <link rel="stylesheet" href="css/whois.css" />
   <link rel="stylesheet" href="css/lifeof.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=IBM+Plex+Mono:wght@300&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=IBM+Plex+Mono:wght@300&display=swap">
 </head>
 
 <body>
@@ -39,19 +54,12 @@
     <h1 id="age">0.000000000</h1>
     <h2 id="data">
       <span id="author" class="name">WHOIS</span>
-      <time datetime="2014-12-13T09:03:00">13 DEC 2014</time>
+      <time>DD MMM YYYY</time>
     </h2>
   </main>
   <footer>
     <ol id="lifeOf" reversed></ol>
   </footer>
-  <script src="js/whois.js"></script>
-  <script src="js/lifeof.js"></script>
-  <script>
-    window.onload = () => {
-      indexJson('index.json')
-    };
-  </script>
 </body>
 
 </html>
