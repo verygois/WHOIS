@@ -7,17 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <script src="js/whois.js"></script>
   <script>
-    // URLのアンカー（#以降の部分）を取得
-    const urlHash = location.hash;
-
-    // URLにアンカーがない場合
-    if (!urlHash) {
-      whoisJson('index.json')
-    } else {
-      // URLにアンカーがある場合
-      let yourname = urlHash.replace('#', '')
-      whoisJson(`${yourname}.json`)
-    }
+    whoisJson('index.json')
   </script>
 
   <!--og:meta-->

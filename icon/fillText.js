@@ -2,7 +2,6 @@
 
 function canvasIcons(ii) {
     const text = document.querySelector('#textHere');
-
     const canvasAll = document.querySelectorAll('canvas');
     for (let canvas of canvasAll) {
         if (canvas.getContext) {

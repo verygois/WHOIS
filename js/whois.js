@@ -4,17 +4,15 @@ async function whoisJson(requestURL) {
   const request = new Request(requestURL);
   const response = await fetch(request);
   const jsonIndex = await response.text();
-
   const index = JSON.parse(jsonIndex);
   whois(index);
   lifeof(index);
 }
 
 function whois(obj) {
-  const yourname = document.querySelector('meta[name="author"]').getAttribute("content")
-  const email = document.querySelector('meta[name="reply-to"]').getAttribute("content")
-
-  const author = document.querySelector('#author')
+  const yourname = document.querySelector('meta[name="author"]').getAttribute("content");
+  const email = document.querySelector('meta[name="reply-to"]').getAttribute("content");
+  const author = document.querySelector('#author');
   author.textContent = yourname;
   author.addEventListener('click', function () {
     author.className = author.className === "name" ? "email" : "name";
@@ -35,9 +33,9 @@ function whois(obj) {
   birth.textContent = date_of_birth;
 
   const birthday = new Date(date_of_birth);
-  const week = birthday.getDay();
   const month = birthday.getMonth();
   const date = birthday.getDate();
+  const week = birthday.getDay();
 
   if (thisMonth === month & thisDate == date) {
     const whois = document.querySelector("#whois");
@@ -49,33 +47,30 @@ function whois(obj) {
   birth.addEventListener('click', function () {
     let thisDay
     if (week == 0) {
-      thisDay = "日曜日 Sunday"
+      thisDay = "日曜日 Sunday";
     } else if (week == 1) {
-      thisDay = "月曜日 Monday"
+      thisDay = "月曜日 Monday";
     } else if (week == 2) {
-      thisDay = "火曜日 Tuesday"
+      thisDay = "火曜日 Tuesday";
     } else if (week == 3) {
-      thisDay = "水曜日 Wednesday"
+      thisDay = "水曜日 Wednesday";
     } else if (week == 4) {
-      thisDay = "木曜日 Thursday"
+      thisDay = "木曜日 Thursday";
     } else if (week == 5) {
-      thisDay = "金曜日 Friday"
+      thisDay = "金曜日 Friday";
     } else if (week == 6) {
-      thisDay = "土曜日 Saturday"
+      thisDay = "土曜日 Saturday";
     }
-
     birth.textContent = birth.textContent === date_of_birth ? thisDay : date_of_birth;
   })
 
   function counter() {
     age.textContent = ((new Date() - new Date(datetime)) / 31557600000).toFixed(9);
   }
-
   function start() {
     setTimeout(() => { counter(); requestAnimationFrame(start); }, 1000 / 30);
   }
-
-  start()
+  start();
 
   const lifeof = document.querySelector('#lifeOf');
   for (let i = 0; i <= thisAge; i++) {
@@ -89,7 +84,6 @@ function whois(obj) {
       <u>${thisYear - i}</u>
       </p>
       `;
-
     } else {
       eachAge.innerHTML = `
       <p>
@@ -103,7 +97,6 @@ function whois(obj) {
 
 function lifeof(obj) {
   const contentAll = obj.contents;
-
   for (const content of contentAll) {
     const yearOf = document.querySelector(`li[data-year="${content.year}"]`);
     const thisLife = document.createElement('p');
