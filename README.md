@@ -1,2 +1,2 @@
 # cv
-The Life of | Whois
+vg.pe.hu/cv/
