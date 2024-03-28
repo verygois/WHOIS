@@ -59,7 +59,6 @@ function whois(obj) {
       thisDay = "<small>土曜日</small> Saturday";
     }
 
-    birth.className = birth.className === "" ? "week" : "";
     birth.innerHTML = birth.innerHTML === date_of_birth ? thisDay : date_of_birth;
   })
 
