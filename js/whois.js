@@ -32,7 +32,7 @@ function whois(obj) {
   function start() {
     setTimeout(() => { counter(); requestAnimationFrame(start); }, 1000 / 30);
   }
-  start()
+  start();
 
   const birthday = new Date(birthTime);
   const week = birthday.getDay(localTime);
