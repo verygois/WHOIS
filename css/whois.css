@@ -1,5 +1,4 @@
 #whois {
-    font-size: 16px;
     position: relative;
     width: 100%;
     height: calc(100vh - 5.5rem);
@@ -28,6 +27,7 @@
     justify-content: space-between;
     padding: 0.5rem;
     margin: 0;
+    top: 0;
     left: 0;
     right: 0;
 }
@@ -36,10 +36,4 @@
 #whois #data time::before {
     display: block;
     font-size: 75%;
-}
-
-@media screen and (max-width: 750px) {
-    #whois {
-        font-size: 3.33vw;
-    }
 }

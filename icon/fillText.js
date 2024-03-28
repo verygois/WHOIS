@@ -8,8 +8,6 @@ function canvasIcons(ii) {
             const ctx = canvas.getContext('2d');
             const x = (canvas.width / 2);
             const y = (canvas.height / 2);
-
-            // キャンバス全体の消去
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             // テキストのスタイル付け
@@ -17,8 +15,6 @@ function canvasIcons(ii) {
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillStyle = '#000';
-
-            // 入力欄のテキストを塗りつぶして描画
             ctx.fillText(text.value, x, y, x * ii);
         }
     }

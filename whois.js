@@ -10,22 +10,13 @@ async function whoisJson(requestURL) {
 }
 
 function whois(obj) {
-  const yourname = obj.name;
-  const email = obj.email;
-  const author = document.querySelector('#whois span');
-  author.textContent = yourname;
-  author.addEventListener('click', function () {
-    author.className = author.className === "name" ? "email" : "name";
-    author.textContent = author.textContent === yourname ? email : yourname;
-  });
-
+  const localTime = new Date().toLocaleString({ timeZone: 'Asia/Tokyo' });
+  const thisMonth = new Date(localTime).getMonth();
+  const thisDate = new Date(localTime).getDate();
   const date_of_birth = obj.date_of_birth;
   const birthTime = obj.birthTime;
-  let localTime = new Date().toLocaleString({ timeZone: 'Asia/Tokyo' });
-  let thisMonth = new Date(localTime).getMonth();
-  let thisDate = new Date(localTime).getDate();
 
-  const age = document.querySelector("#whois .age");
+  const age = document.querySelector("#whois #age");
   function counter() {
     age.textContent = ((new Date() - new Date(birthTime)) / 31557600000).toFixed(9);
   }
@@ -34,11 +25,20 @@ function whois(obj) {
   }
   start();
 
+  const yourname = obj.name;
+  const email = obj.email;
+  const author = document.querySelector('#whois #data span');
+  author.textContent = yourname;
+  author.addEventListener('click', function () {
+    author.className = author.className === "name" ? "email" : "name";
+    author.textContent = author.textContent === yourname ? email : yourname;
+  });
+
   const birthday = new Date(birthTime);
   const week = birthday.getDay(localTime);
   const month = birthday.getMonth(localTime);
   const date = birthday.getDate(localTime);
-  const birth = document.querySelector("#whois time");
+  const birth = document.querySelector("#whois #data time");
   birth.textContent = date_of_birth;
   birth.addEventListener('click', function () {
     let thisDay;
@@ -64,7 +64,7 @@ function whois(obj) {
   })
 
   let thisYear = new Date(localTime).getFullYear();
-  let thisAge = ((new Date(`${thisYear}-12-31T23:59`) - new Date(birthTime)) / 31557600000).toFixed(0);
+  let thisAge = ((new Date(`${thisYear}-12-31T23:59Z`) - new Date(birthTime)) / 31557600000).toFixed(0);
   const lifeOf = document.querySelector('#lifeOf');
   for (let i = 0; i <= thisAge; i++) {
     const eachAge = document.createElement('li');

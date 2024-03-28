@@ -2,11 +2,11 @@
   "name": "vg.pe.hu",
   "email": "sorryforthedelayinsending@vg.pe.hu",
   "date_of_birth": "13 DEC 2014",
-  "birthTime": "2014-12-13T09:03:00",
+  "birthTime": "2014-12-13T09:03:00Z",
   "lifeOf": [
     {
       "year": "2023",
-      "thing": "<time>18 Oct</time> Launch <a href='https://the-best-items.com/'>the-best-items.com</a>"
+      "thing": "<time>18 Oct</time> <a href='https://the-best-items.com/' target='_blank'>the-best-items.com</a> are open"
     },
     {
       "year": "2023",
@@ -22,15 +22,15 @@
     },
     {
       "year": "2022",
-      "thing": "<time>23 Jul</time> <a href='https://the-things-i-we-own.github.io/'>The Things I (We) Own</a>"
+      "thing": "<time>23 Jul</time> <a href='https://the-things-i-we-own.github.io/' target='_blank'>The Things I (We) Own</a>"
     },
     {
       "year": "2021",
-      "thing": "<time>16 Sep</time> Domain Registration + Domain Privacy Protection <a href='https://creative-community.space/'>creative-community.space</a> <small>¥1,475 + 908</small>"
+      "thing": "<time>16 Sep</time> Domain Registration + Domain Privacy Protection <a href='https://creative-community.space/' target='_blank'>creative-community.space</a> <small>¥1,475 + 908</small>"
     },
     {
       "year": "2020",
-      "thing": "<time>27 Jun - 30 Jan, 2021</time> <a href='https://praytimes.pe.hu/'>プレイタイムズ</a>"
+      "thing": "<time>27 Jun - 30 Jan, 2021</time> <a href='https://praytimes.pe.hu/' target='_blank'>プレイタイムズ</a>"
     },
     {
       "year": "2019",

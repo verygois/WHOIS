@@ -1,5 +1,18 @@
-#data {
-    top: 0;
+#whois,
+#lifeOf {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 750px) {
+    #whois {
+        font-size: 3.33vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #lifeOf {
+        font-size: 3.5vw;
+    }
 }
 
 #data #author,
@@ -67,4 +80,6 @@
 
 #lifeOf li p small {
     filter: blur(0.25rem);
+    pointer-events: none;
+    user-select: none;
 }
